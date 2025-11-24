@@ -1,0 +1,57 @@
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background-image: url("images/fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+header{
+    position: relative;
+    height: 200px;
+    overflow: visible;
+}
+
+.home{
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 300px;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+    font-size: 100px;
+    color: #D7B377;
+    padding-top: 150px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.slogan{
+    text-align: center;
+    font-family: "Alice", serif;
+    font-size: 20px;
+    color: #F5F0F6;
+}
+
+main{
+    margin: 300px 200px 0 200px;
+}
