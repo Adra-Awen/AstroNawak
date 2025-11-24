@@ -55,3 +55,58 @@ h1{
 main{
     margin: 300px 200px 0 200px;
 }
+
+h2{
+    font-family: "Patrick Hand", cursive;
+    color:#F5F0F6;
+    font-size: 28px;
+}
+
+.title-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.tableau-signes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 80px;
+    margin: 0 0 100px 0;
+}
+
+.carte-astro{
+    background:#F5F0F6;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.pop-up, p{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Alice", serif;
+    color: black;
+    margin: 0;
+}
+
+.pop-up, img{
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+footer{
+    color: #F5F0F6;
+    text-align: end;
+    padding-top: 50px;
+    font-weight: 100;
+}
