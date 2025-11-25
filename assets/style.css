@@ -29,16 +29,17 @@ header{
 
 .logo{
     position: absolute;
-    top: -100px;
-    left: -50px;
-    width: 300px;
+    top: clamp(-80px, -10vw, -20px);
+    left: clamp(-40px, -8vw, -10px);
+    width: clamp(150px, 20vw, 300px);
     height: auto;
 }
 
 h1{
     text-align: center;
     font-family: "Patrick Hand", cursive;
-    font-size: 100px;
+    font-size: clamp(60px, 10vw, 300px);
+    font-weight: 200;
     color: #D7B377;
     padding-top: 150px;
     padding-bottom: 0;
@@ -48,18 +49,26 @@ h1{
 .slogan{
     text-align: center;
     font-family: "Alice", serif;
-    font-size: 20px;
+    font-size: clamp(12px, 3vw, 20px);
     color: #F5F0F6;
 }
 
 main{
-    margin: 300px 200px 0 200px;
+    max-width: 1000px;
+    margin: 20% auto 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+img, div{
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 h2{
     font-family: "Patrick Hand", cursive;
     color:#F5F0F6;
-    font-size: 28px;
+    font-size: clamp(10px, 5vw, 28px);
 }
 
 .title-1{
@@ -69,12 +78,19 @@ h2{
     margin-bottom: 50px;
 }
 
+.moon{
+    width: clamp(25px, 5vw, 60px);
+    height: auto;
+}
+
 .tableau-signes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 80px;
-    margin: 0 0 100px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding : 20px;
 }
 
 .carte-astro{
@@ -86,27 +102,33 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    text-align: center;
+    gap: 10px;
     margin: auto;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carte-astro:hover{
+    transform: scale(1.1);  
+}
+
+.carte-astro img {
+    height: 80px;
+    margin: 0;
 }
 
 .pop-up, p{
     font-size: 20px;
     text-decoration: none;
-    font-family: "Alice", serif;
-    color: black;
+    font-family: "Patrick Hand", cursive;
+    color: 863C9F;
     margin: 0;
-}
-
-.pop-up, img{
-    height: 50px;
-    padding-bottom: 10px;
 }
 
 footer{
     color: #F5F0F6;
     text-align: end;
-    padding-top: 50px;
+    padding-top: 150px;
     font-weight: 100;
 }
