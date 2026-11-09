@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "BagelFatOne";
+    src: url(./fonts/BagelFatOne-Regular.woff2) format("woff2"), 
+        url(./fonts/BagelFatOne-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MartelSans";
+    src: url(./fonts/MartelSans-Regular.woff2) format("woff2"), 
+        url(./fonts/MartelSans-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* =========================
+========MOBILE FIRST========
+==========================*/
+main{
+    max-width: 1000px;
+    margin: 20% auto 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url("images/fond-ecran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+header{
+    position: relative;
+    height: 200px;
+    overflow: visible;
+}
+
+.home{
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    top: clamp(-80px, -10vw, -20px);
+    left: clamp(-40px, -8vw, -10px);
+    width: clamp(150px, 20vw, 300px);
+    height: auto;
+}
+
+h1{
+    font-family: 'BagelFatOne';
+    text-align: center;
+    font-size: clamp(60px, 10vw, 300px);
+    font-weight: 200;
+    color: #D7B377;
+    padding-top: 150px;
+    margin: 0;
+}
+
+.slogan{
+    font-family: 'MartelSans';
+    text-align: center;
+    font-size: clamp(12px, 3vw, 20px);
+    color: #F5F0F6;
+    margin-top: 20px;
+}
+
+img, div{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+h2{
+    font-family: "MartelSans";
+    color:#F5F0F6;
+    font-size: 16px;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.moon{
+    width: clamp(30px, 5vw, 60px);
+    height: auto;
+}
+
+.tableau-signes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 80px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding : 20px;
+}
+
+.carte-astro{
+    background:#F5F0F6;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carte-astro:hover{
+    transform: scale(1.1);  
+}
+
+.carte-astro img {
+    height: 75px;
+    width: 90px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+.pop-up, p{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "BagelFatOne";
+    color: #863C9F;
+    margin: 0;
+}
+
+footer {
+    font-family: 'MartelSans';
+    color:black;
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+/* =========================
+==========DESKTOP===========
+==========================*/
+
+@media screen and (min-width: 768px) {
+
+    h2{
+    font-family: "MartelSans";
+    color:#F5F0F6;
+    font-size: 26px;
+}
+
+    footer{
+    font-family: 'MartelSans';
+    color: #D7B377;
+    text-align: right;
+    padding-top: 150px;
+    font-size: 12px;
+
+    }
+
+}
