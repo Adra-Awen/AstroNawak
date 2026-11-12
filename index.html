@@ -21,81 +21,92 @@
         </div>
         <div class="tableau-signes">
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Bélier">
                     <img src="./assets/images/belier.png" alt="logo bélier">
                     <p class="nom-signe">Bélier</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Taureau">
                     <img src="assets/images/taureau.png" alt="logo taureau">
                     <p class="nom-signe">Taureau</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Gémeaux">
                     <img src="assets/images/gemeaux.png" alt="logo gémeaux">
                     <p class="nom-signe">Gémeaux</p>
                 </a>
             </div><div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Cancer">
                     <img src="assets/images/cancer.png" alt="logo cancer">
                     <p class="nom-signe">Cancer</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Lion">
                     <img src="assets/images/lion.png" alt="logo lion">
                     <p class="nom-signe">Lion</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Vierge">
                     <img src="assets/images/vierge.png" alt="logo vierge">
                     <p class="nom-signe">Vierge</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Balance">
                     <img src="assets/images/balance.png" alt="logo balance">
                     <p class="nom-signe">Balance</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Scorpion">
                     <img src="assets/images/scorpion.png" alt="logo scorpion">
                     <p class="nom-signe">Scorpion</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Sagittaire">
                     <img src="assets/images/sagittaire.png" alt="logo sagittaire">
                     <p class="nom-signe">Sagittaire</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
-                    <img src="assets/images/cancer.png" alt="logo capricorne">
+                <a class="pop-up" href="#" data-signe="Capricorne">
+                    <img src="assets/images/capricorne.png" alt="logo capricorne">
                     <p class="nom-signe">Capricorne</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
+                <a class="pop-up" href="#" data-signe="Verseau">
                     <img src="assets/images/verseau.png" alt="logo verseau">
                     <p class="nom-signe">Verseau</p>
                 </a>
             </div>
             <div class="carte-astro">
-                <a class="pop-up" href="">
-                    <img src="assets/images/poisson.png" alt="logo poisson">
-                    <p class="nom-signe">Poisson</p>
+                <a class="pop-up" href="#" data-signe="Poissons">
+                    <img src="assets/images/poisson.png" alt="logo poissons">
+                    <p class="nom-signe">Poissons</p>
                 </a>
             </div>
         </div>
     </main> 
     <footer>
-            &copy; <span id="current-year"></span> AstroNawak - Adra Awen
+            &copy; <span id="current-year"></span> - AstroNawak - Adra Awen
     </footer>
+    <!-- POP UP -->
+    <div class="overlay" id="overlay">
+        <div class="modale">
+            <button class="fermer" id="fermer">&times;</button>
+            <h2 id="titre-modale"></h2>
+            <div id="contenu-modale">
+                <p class="texte-modale"></p>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 </body>
 </html>
